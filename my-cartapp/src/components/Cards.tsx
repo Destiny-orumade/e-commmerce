@@ -4,7 +4,7 @@ import styles from "../style/Cards.module.css";
 import { useSelector } from "react-redux";
 import type { RootState } from "../redux/store";
 
-function ProductCard() {
+function Card() {
   const { limit } = useSelector((state: RootState) => state.loadMore);
   const { isLoading, data, isError } = useGetProductsQuery({ limit });
 
@@ -45,4 +45,4 @@ function ProductCard() {
   return <>{storeProduct}</>;
 }
 
-export default ProductCard;
+export default Card;
