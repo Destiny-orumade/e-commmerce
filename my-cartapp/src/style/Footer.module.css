@@ -1,0 +1,176 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.footersection {
+  background-color: #FAFAFA;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 80%;
+  min-height: 142px;
+  display: flex;
+  align-items: center;
+ 
+
+   @media (max-width: 700px) {
+    height: 172px;
+  }
+}
+
+.footercontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+
+   @media (max-width: 700px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.footercontainer aside {
+  display: flex;
+  gap: 20px;
+}
+
+.footercontainer aside img:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+
+.footercontainer h3 {
+  font-weight: 700;
+  color: rgba(37, 43, 66, 1);
+  font-size: 1.5rem;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 15vh auto;
+  width: 80%;
+
+  @media (max-width: 1183px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 4rem;
+  }
+
+  @media (max-width: 800px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+  }
+
+  @media (max-width: 560px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 4rem;
+  }
+}
+
+.links aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 700;
+}
+
+.links aside h5 {
+  letter-spacing: 0.1px;
+  color: rgba(37, 43, 66, 1);
+  margin-bottom: 10px;
+}
+
+.links aside a {
+  font-size: 0.875rem;
+  letter-spacing: 0.2px;
+  color: rgba(115, 115, 115, 1);
+}
+
+.links aside a:hover {
+  color: rgba(35, 166, 240, 1);
+  text-decoration: underline;
+}
+
+.newsletter {
+  max-width: 321px;
+  width: 321px;
+  border-width: 1px;
+  border-radius: 5px;
+  display: flex;
+  height: 120px;
+  align-items: center;
+  overflow: hidden;
+  
+  
+
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px;
+  border-radius: 5px;
+  font-weight: 400;
+  background-color: #E6E6E6;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  font-size: 0.875rem;
+  letter-spacing: 0.2px;
+  color: rgba(115, 115, 115, 1);
+}
+
+.input button {
+  background: rgba(35, 166, 240, 1);
+  width: 117px;
+  height: 58px;
+  color: white;
+  font-size: 0.875rem;
+  letter-spacing: 0.2px;
+  margin-left: 20px;
+  padding: 0px 20px;
+}
+
+input button:hover {
+  cursor: pointer;
+  background-color: rgb(15, 137, 207);
+}
+
+.input p {
+  color:#737373;
+  margin: 0 auto;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  font-size: 0.75rem;
+}
+
+.footerbottom {
+  height: 74px;
+  background-color: rgba(230, 230, 230, 1);
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  font-size: 0.875rem;
+  color: rgba(115, 115, 115, 1);
+}
+
+.footerbottom h6 {
+  margin: 0 auto;
+  width: 80%;
+
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+}
