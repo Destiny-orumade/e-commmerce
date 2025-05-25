@@ -6,6 +6,7 @@ import Service from './components/Service'
 import FeaturedPost from './components/FeaturedPost'
 import Product from './components/Product'
 
+
 function App() {
  
 
@@ -13,7 +14,7 @@ function App() {
     <div>
       <Header />
       <HeroSection />
-      {/* <Product /> */}
+      <Product />
       <FeaturedPost />
       <Service />
       <Footer />
