@@ -15,14 +15,17 @@
 
 .productParent {
   text-align: center;
-  width: 250px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 100px;
+ 
 
 
   @media (width <= 550px) {
     width: 80vw;
+    margin-left: 40px;
   }
   transition-duration: 1.2s;
 }
