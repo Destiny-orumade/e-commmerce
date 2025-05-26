@@ -68,10 +68,10 @@ const Footer = () => {
                 </aside>
               </div>
                    
-                    <div className={style.footerbottom}>
-                        <h6>
-                            <span>Made With Love By</span> <span>Finland All Right Reserved</span>
-                        </h6>
+                    <div className={style.bottom}>
+                        <h6> <span>Made With Love By</span> <span>Finland All Right Reserved</span>  </h6>
+                            
+                    
 
                     </div>
   </section>

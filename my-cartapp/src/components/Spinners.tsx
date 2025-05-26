@@ -10,9 +10,9 @@ const override: CSSProperties = {
 
 function Spinners() {
   return (
-    <div className="sweet-loading">
+    <div className="loading">
       <RotateLoader
-        color={"#23A6F0"}
+        color={"gray"}
         loading={true}
         cssOverride={override}
         size={150}

@@ -37,7 +37,7 @@ function Card() {
   if (isError) {
     return (
       <>
-        <div className={styles.spin}>Error Fetching Products...</div>
+        <div className={styles.spin}> An Error Occured While Fetching Your Products...</div>
       </>
     );
   }
