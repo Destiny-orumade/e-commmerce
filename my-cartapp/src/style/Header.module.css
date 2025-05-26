@@ -1,59 +1,10 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-
-} 
-
-
-.mobileMenu {
-  position: fixed;
-  width: 100vw;
-  background: white;
-  text-align: center;
-  padding-bottom: 70px;
-  transition: all 3s;
-  top: 100px;
-  transition: all 1.5s ease-in-out;
-  z-index: 1000;
-
-  @media (min-width: 840px) {
-    display: none;
-  }
-}
-
-.initialMobileMenu {
-  position: fixed;
-  width: 100vw;
-  background: white;
-  text-align: center;
-  padding-bottom: 70px;
-  top: -300px;
-  transition: all 1.5s ease-in-out;
-  z-index: 1000;
-
-  @media (min-width: 840px) {
-    display: none;
-  }
-}
-
-.mobileMenu li,
-.initialMobileMenu li {
-  color: rgba(115, 115, 115, 1);
-  font-weight: 400;
-  letter-spacing: 0.2px;
-  font-size: 1.875rem;
-  margin-top: 30px;
-  transition-duration: 0.5s;
-}
-
-.mobileMenu li:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  color: rgba(35, 166, 240, 1);
 }
 
 a {
@@ -61,32 +12,82 @@ a {
   font-weight: 700;
 }
 
-.topbar{
-  display: flex;
-  justify-content: space-between;
+/* Mobile Menu */
+.mobileMenu {
+  position: fixed;
+  top: 70px;
+  left: 0;
   width: 100%;
-  align-items: center;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: top 0.5s ease-in-out;
+  z-index: 1000;
 }
 
+.initialMobileMenu {
+  position: fixed;
+  top: -400px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: top 0.5s ease-in-out;
+  z-index: 1000;
+}
 
+.mobileMenu ul,
+.initialMobileMenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobileMenu li,
+.initialMobileMenu li {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.mobileMenu a,
+.initialMobileMenu a {
+  color: #737373;
+}
+
+.mobileMenu a:hover {
+  color: #23a6f0;
+  text-decoration: underline;
+}
+
+/* Header Top Bar */
 .header {
-font-family: 'Montserrat', sans-serif;
- background-color: rgba(35, 133, 109, 1);
-  height: 58px;
-  padding: 0 24px;
+  background-color: rgba(35, 133, 109, 1);
+  height: 60px;
+  padding: 24px;
   display: flex;
   align-items: center;
   font-weight: 700;
   font-size: 0.875rem;
   color: white;
+}
 
-  @media (max-width: 960px) {
+@media (max-width: 960px) {
+  .header {
     font-size: 0.575rem;
   }
+}
 
-  @media (max-width: 715px) {
+@media (max-width: 715px) {
+  .header {
     display: none;
   }
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
 .topleft {
@@ -94,7 +95,7 @@ font-family: 'Montserrat', sans-serif;
   gap: 20px;
 }
 .topleft p img {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 .topleft p {
   display: flex;
@@ -105,48 +106,50 @@ font-family: 'Montserrat', sans-serif;
   display: flex;
   align-items: center;
   gap: 10px;
-  transition-duration: 3s;
 }
 
 .topright img:hover {
   cursor: pointer;
-  scale: 1.2;
+  transform: scale(1.2);
 }
-   
+
+/* Navbar Main */
 .navbar {
-  
-  margin-top: 20px;
+  position: sticky;
   padding: 0 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
+}
 
-   @media (width < 715px) {
+@media (max-width: 715px) {
+  .navbar {
     padding-top: 20px;
   }
-  @media (width < 800px) {
+}
+
+@media (max-width: 800px) {
+  .navbar {
     padding-bottom: 15px;
   }
 }
 
-
-
-
 .navbar h1 {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: rgba(37, 43, 66, 1);
-  letter-spacing: 0.1px;
+  color: #252b42;
   font-size: 1.5rem;
   margin-right: 100px;
-  
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .navbar h1 {
     margin-right: 50px;
   }
+}
 
-  @media (max-width: 862px) {
+@media (max-width: 862px) {
+  .navbar h1 {
     margin-right: 30px;
   }
 }
@@ -160,51 +163,41 @@ font-family: 'Montserrat', sans-serif;
   display: flex;
   align-items: center;
   gap: 20px;
+}
 
-  @media (max-width: 840px) {
+@media (max-width: 840px) {
+  .navbar nav ul {
     display: none;
   }
 }
 
 .navbar nav ul li {
-  color: rgba(115, 115, 115, 1);
-  letter-spacing: 0.2px;
+  color: #737373;
   font-size: 0.875rem;
   font-weight: 700;
   list-style: none;
-
 }
 
 .navbar nav ul li:hover {
   cursor: pointer;
-  color: rgba(35, 166, 240, 1);
-  
+  color: #23a6f0;
 }
-
 
 .navicons {
   font-weight: 700;
   font-size: 0.875rem;
-  color: rgba(35, 166, 240, 1);
-  letter-spacing: 0.2px;
+  color: #23a6f0;
   display: flex;
   gap: 10px;
   align-items: center;
   margin-left: 100px;
-
-  @media (max-width: 840px) {
-    display: none;
-  }
-
-  @media (width < 936px) {
-    font-size: 0.65rem;
-  }
 }
 
-/* .hamburger {
-  display: none;
-  cursor: pointer;
-} */
+@media (max-width: 840px) {
+  .navicons {
+    display: none;
+  }
+}
 
 .navicons p:hover {
   cursor: pointer;
@@ -212,45 +205,55 @@ font-family: 'Montserrat', sans-serif;
   color: rgba(35, 133, 109, 1);
 }
 
-
-
 .navicons img {
   cursor: pointer;
-  text-decoration: underline;
 }
 
 .navicons img:hover {
   transform: scale(1.2);
 }
 
-/* .tip {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-
-}
-
-.tip img {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-} */
- 
+/* Mobile Icons */
 .smallicon {
   display: flex;
   gap: 30px;
   align-items: center;
+}
 
-  @media (min-width: 840px) {
+@media (min-width: 840px) {
+  .smallicon {
     display: none;
   }
-  transition-duration: 1.5s;
-
 }
 
 .smallicon img:hover {
-   cursor: pointer;
-   scale: 1.3;
+  cursor: pointer;
+  transform: scale(1.3);
+}
 
+
+/* Hamburger Animation */
+.hamburger {
+  width: 25px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.hamburger span {
+  height: 3px;
+  background: black;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
