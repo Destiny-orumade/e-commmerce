@@ -104,7 +104,7 @@
   display: flex;
   height: 120px;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
   
   
 
@@ -144,6 +144,7 @@
   border-radius: 10px;
   font-weight: 600;
 
+
   @media screen and (max-width: 500px) {
     width: 80px;
     height: 30px;
@@ -155,13 +156,16 @@
 
 .newsletter button:hover {
   cursor: pointer;
-  background-color: rgb(15, 137, 207);
+  background-color: rgb(101, 191, 243);
 }
 
-.newsletter p {
+.text {
   color: #737373;
   font-size: 12px;
+  margin-right: 110px;
 }
+
+
 
 .bottom {
   height: 74px;
@@ -170,14 +174,16 @@
   align-items: center;
   font-weight: 700;
   letter-spacing: 0.2px;
-  font-size: 0.875rem;
   color: rgba(115, 115, 115, 1);
+  justify-content: center;
+  font-size: bold;
 }
 
-.bottom h6 {
-  margin-left: 20px;
+.bottom h6  {
+  margin-left: 0px;
   margin: 0 auto;
-  width: 80%;
+  width: 70%;
+  font-size: bolder;
 
   @media (max-width: 500px) {
     display: flex;

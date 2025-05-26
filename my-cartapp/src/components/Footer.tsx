@@ -64,15 +64,16 @@ const Footer = () => {
                             <input type="email" placeholder="Your Email" />
                                   <button>Subscribe</button>
                           </div>
-                                       <p>Lore imp sum dolor Amit</p>
+                                       <p className={style.text}>Lore imp sum dolor Amit
+
+                                       </p>
+
                 </aside>
               </div>
                    
                     <div className={style.bottom}>
                         <h6> <span>Made With Love By</span> <span>Finland All Right Reserved</span>  </h6>
                             
-                    
-
                     </div>
   </section>
   )

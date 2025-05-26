@@ -163,6 +163,7 @@ a {
   display: flex;
   align-items: center;
   gap: 20px;
+  color: black;
 }
 
 @media (max-width: 840px) {
@@ -172,7 +173,7 @@ a {
 }
 
 .navbar nav ul li {
-  color: #737373;
+  color: #060505;
   font-size: 0.875rem;
   font-weight: 700;
   list-style: none;
